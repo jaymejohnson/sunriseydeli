@@ -1,0 +1,159 @@
+::selection {
+    background-color: #f178ff;
+    color: white;
+}
+
+body {
+    font-size: 24px;
+    margin: 0;
+    background-color: white;
+}
+
+p {
+    font-family: 'Alegreya', serif;
+    line-height: 1.5em;
+    padding: 0;
+}
+
+a {
+    color:black;
+    text-decoration:none;
+    text-decoration-skip: ink;
+}
+
+a:hover {
+    text-decoration:underline;
+}
+
+.hero-container {
+    margin: 0 auto 3em;
+    overflow: visible;
+    max-width: 950px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.hero-image {
+    font-size: 0;
+    max-width: 642px;
+    max-height: 642px;
+    background-image: url("../images/00_background_cropped.jpg");
+    margin: 24px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+}
+
+.hero-image img {
+    max-height: 642px;
+}
+
+main {
+    position: relative;
+}
+
+.text {
+    max-width: 594px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.image-viewport-wide {
+    width: 100%;
+    max-width: 960px;
+    height: 978px;
+    margin: 0 auto;
+    opacity: 0;
+    background-color: red;
+    font-size: 0;
+}
+
+.image-viewport-thin {
+    width: 100%;
+    overflow: auto;
+    font-size: 0;
+}
+
+.image-background {
+    width: 100%;
+    background-color: #bcdeaf;
+    margin: 1.5em 0;
+    background-size: auto 100%;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+.slideshow-image-wide {
+    font-size: 0;
+    width: 100%;
+}
+
+.slideshow-image-wide img {
+    width: 100%;
+}
+
+.slideshow-image-thin {
+    height: 600px !important;
+    width: auto;
+    overflow: auto;
+    background-position: center;
+    background-size: auto 100%;
+}
+
+.menu {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.menu-text {
+    font-family: 'Alegreya', serif;
+    line-height: 0em;
+    font-size: .5em;
+}
+
+@media (min-width: 960px) {
+    .image-viewport-thin {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .image-viewport-wide {
+        display: none;
+    }
+}
+
+@media (min-width: 700px) {
+    .hero-image {
+        margin: 24px auto;
+    }
+
+}
+
+@media (min-width: 550px) {
+    .slick-slideshow-container-thin.slick-slider {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        font-size: 18px;
+    }
+
+    .hero-image {
+        border-width: 3px;
+        margin: 18px;
+    }
+    .slick-slideshow-container-wide.slick-slider {
+        display: none;
+    }
+}
